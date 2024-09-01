@@ -1,0 +1,125 @@
+<!--
+    /**
+ * FACULDADE ALURA
+ * CURSO ANALISE E DESENVOLVIMENTO DE SISTEMAS
+ * MATERIA DESENVOLVIMENTO FRONTEND
+ * ALUNO MATEUS BARBOSA SIQUEIRA LOPES @mateusbslopes
+ * node 20.13.1
+ * MACOS SONOMA 14.4.1 (23E224)
+ */
+-->
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Development</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Designs diferentes para 3 breakpoints
+
+        /* Breakpoint "Large screens (lg)"" */
+        @media (min-width: 992px) {
+            .navbar-custom-lg {
+                background-color: #4CAF50;
+            }
+
+            .navbar-custom-lg .nav-link {
+                color: white;
+                padding: 15px 20px;
+            }
+        }
+
+        /* Breakpoint "Medium screens (md)" */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .navbar-custom-md {
+                background-color: #2196F3;
+            }
+
+            .navbar-custom-md .nav-link {
+                color: white;
+                padding: 10px 15px;
+            }
+        }
+
+        /* Breakpoint "Small screens (sm)" */
+        @media (max-width: 767.98px) {
+            .navbar-custom-sm {
+                background-color: #FF5722;
+            }
+
+            .navbar-custom-sm .nav-link {
+                color: white;
+                padding: 8px 10px;
+                text-align: center;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteudo -->
+    <div class="container">
+        <h1 class="mt-5">Responsive Frontend Development</h1>
+        <p>Modifique o tamanho do navegador para verificar o design sendo alterado.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 <a href="mailto:mateusbslopes@gmail.com"
+                    class="text-white">mateusbslopes@gmail.com</a>. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Atualizacao das classes dependendo do breakpoint
+        function updateNavbar() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.remove('navbar-custom-lg', 'navbar-custom-md', 'navbar-custom-sm');
+
+            if (window.innerWidth >= 992) {
+                navbar.classList.add('navbar-custom-lg');
+            } else if (window.innerWidth >= 768) {
+                navbar.classList.add('navbar-custom-md');
+            } else {
+                navbar.classList.add('navbar-custom-sm');
+            }
+        }
+        updateNavbar();
+        window.addEventListener('resize', updateNavbar);
+    </script>
+</body>
+
+</html>
