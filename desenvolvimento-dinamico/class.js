@@ -1,3 +1,12 @@
+/**
+ * FACULDADE ALURA
+ * CURSO ANALISE E DESENVOLVIMENTO DE SISTEMAS
+ * MATERIA DESENVOVIMENTO DINAMICO
+ * ALUNO MATEUS BARBOSA SIQUEIRA LOPES @mateusbslopes
+ * node 20.13.1
+ * MACOS SONOMA 14.4.1 (23E224)
+ */
+
 class Funcionario {
     constructor(name, age, position) {
         this.name = name;
