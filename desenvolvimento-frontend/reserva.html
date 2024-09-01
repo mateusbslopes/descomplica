@@ -1,0 +1,71 @@
+<!--
+    /**
+ * FACULDADE ALURA
+ * CURSO ANALISE E DESENVOLVIMENTO DE SISTEMAS
+ * MATERIA DESENVOLVIMENTO FRONTEND
+ * ALUNO MATEUS BARBOSA SIQUEIRA LOPES @mateusbslopes
+ * node 20.13.1
+ * MACOS SONOMA 14.4.1 (23E224)
+ */
+-->
+
+<!DOCTYPE html>
+
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device.width, initial-scale=1.0">
+    <title>Desenvolvimento frontend</title>
+</head>
+
+<body>
+
+    <form>
+        <label>Nome</label>
+        <input name="name" type="text">
+
+        <label>Email</label>
+        <input name="email" type="email">
+
+        <br/>
+
+        <label>Serviços desejado</label>
+        <fieldset>
+            <input id="car-rent" name="service" type="checkbox" value="car-rent">
+            <label for="car-rent">Aluguel de Veículos</label>
+
+            <input id="buy-tickets" name="service" type="checkbox" value="buy-tickets">
+            <label for="buy-tickets">Compra de Passagens</label>
+
+            <input id="rent-room" name="service" type="checkbox" value="rent-room">
+            <label for="rent-room">Reserva de Hospedagem</label>
+        </fieldset>
+
+        <br/>
+
+        <label>Forma de pagamento</label>
+        <fieldset>
+            <input id="credit" name="payment-method" type="radio" value="credit">
+            <label for="credit">Cartão de Crédito</label>
+
+            <input id="ticket" name="payment-method" type="radio" value="ticket">
+            <label for="ticket">Boleto</label>
+
+            <input id="pix" name="payment-method" type="radio" value="pix">
+            <label for="pix">PIX</label>
+        </fieldset>
+
+        <label>Parcelamento</label>
+        <select name="installment">
+            <option value="1">À vista</option>
+            <option value="5">5x sem juros</option>
+            <option value="10">10x com juros</option>
+        </select>
+    </form>
+
+</body>
+
+
+</html>
